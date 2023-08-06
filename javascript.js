@@ -6,15 +6,14 @@
 //string number boolean null bigint
 //object arrays
 
-var obj = {
-    name: "aditya babu",
-    id: 32,
-    test: ["fail", "pass", "fail", "pass"],
-    exam: {
-        minterm: "fail",
-        final: "pass"
-
-    },
-    isgoodstructure: true
-};
-console.log(obj);
+const myMarks = 40;
+const maxMarks = 100;
+if (myMarks > maxMarks) {
+    console.log("impossible");
+}
+else if (myMarks >= 40) {
+    console.log("pass");
+}
+else {
+    console.log("Hero")
+}
