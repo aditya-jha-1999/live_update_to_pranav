@@ -8,12 +8,16 @@
 
 const myMarks = 40;
 const maxMarks = 100;
-if (myMarks > maxMarks) {
-    console.log("impossible");
-}
-else if (myMarks >= 40) {
-    console.log("pass");
-}
-else {
-    console.log("Hero")
+switch (myMarks > maxMarks) {
+    case true:
+        console.log("hey from case 1, its is true");
+        break;
+
+    case false:
+        console.log("hey from case 2, its is false");
+        break;
+
+    default:
+        console.log("nothing is working here");
+        break;
 }
