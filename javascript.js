@@ -1,23 +1,20 @@
 //Introduction ###########
 //conditional statement
 //Array & object
-//loop 
+//loop
 //functions
 //string number boolean null bigint
 //object arrays
 
-const myMarks = 40;
-const maxMarks = 100;
-switch (myMarks > maxMarks) {
-    case true:
-        console.log("hey from case 1, its is true");
-        break;
-
-    case false:
-        console.log("hey from case 2, its is false");
-        break;
-
-    default:
-        console.log("nothing is working here");
-        break;
-}
+var obj = {
+    name: "Aditya jha",
+    age: 24,
+    test: ["fail", "pass", "pass"],
+    exam: {
+        midterm: "fail",
+        final: "pass",
+    },
+    isgoodstudent: true,
+    fullname: "aditya kumar jha",
+};
+console.log(obj.fullname);
