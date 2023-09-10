@@ -6,15 +6,19 @@
 //string number boolean null bigint
 //object arrays
 
-var obj = {
-    name: "Aditya jha",
-    age: 24,
-    test: ["fail", "pass", "pass"],
-    exam: {
-        midterm: "fail",
-        final: "pass",
-    },
-    isgoodstudent: true,
-    fullname: "aditya kumar jha",
+const items = {
+    food: 50,
+    water: 260,
+    drinks: 200,
 };
-console.log(obj.fullname);
+var cart = 0;
+var hisFunction = () => console.log("mashed UP");
+var myFunction = (items) => {
+    return cart + items;
+
+}
+var addToCart = (item) => {
+    cart = myFunction(item);
+};
+addToCart(items.drinks);
+console.log("cart:", cart);
