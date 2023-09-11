@@ -6,19 +6,7 @@
 //string number boolean null bigint
 //object arrays
 
-const items = {
-    food: 50,
-    water: 260,
-    drinks: 200,
-};
-var cart = 0;
-var hisFunction = () => console.log("mashed UP");
-var myFunction = (items) => {
-    return cart + items;
-
-}
-var addToCart = (item) => {
-    cart = myFunction(item);
-};
-addToCart(items.drinks);
-console.log("cart:", cart);
+const myArray = [1, 2, 3, 4, 5, , 6, 7];
+const deleted = myArray.splice(0, 4, 5, 4, 3, 2);
+console.log(myArray);
+console.log(deleted);
